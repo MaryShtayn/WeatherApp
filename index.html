@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <script src="https://kit.fontawesome.com/a045766205.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+    <div class="main-box-conteiner">
+        <form class="form-search" id="search-form">
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Enter the city name" aria-label="Search"
+                    aria-describedby="search-addon" id="search-input" />
+                <span class="input-group-text" id="search-addon" input type="submit">
+                    <svg width="16" height="16" class="bi bi-geo-alt">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                </span>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    <li id="city"></li>
+                    <li id="today"></li>
+                </ul>
+                <ul>
+                    <div class="li">Sunny</div>
+                    <div class="li">Precipitation: 0%</div>
+                    <div class="li">Humidity: 29%</div>
+                    <div class="li">Wind: 13 km/h</div>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span class="current-temp" id="temperature">19</span>
+                <span class="units"><a href="#" id="celsius-link">°C </a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span>
+                <p class="curr-day-temp">🌞 Day 32°C</p>
+                <p class="curr-night-temp">/🌙 Night 19°C</p>
+            </div>
+
+            <div class="col-4">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" class="current-weather-icon"
+                    alt="current weather icon" />
+            </div>
+        </div>
+
+        <hr />
+        <h5 class="title-weekly-forecast">6-Day Weather Forecast:</h5>
+        <div class="container-weekly-forecast row">
+            <div class="col-2">
+                <h3 class="date">
+                    02 Jul,<br />
+                    Sat
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">29°C</h4>
+                <p class="tmpr-dgree-night">/14°C</p>
+            </div>
+            <div class="col-2">
+                <h3 class="date">
+                    03 Jul,<br />
+                    Sun
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">30°C</h4>
+                <p class="tmpr-dgree-night">/16°C</p>
+            </div>
+            <div class="col-2">
+                <h3 class="date">
+                    04 Jul,<br />
+                    Mon
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">33°C</h4>
+                <p class="tmpr-dgree-night">/20°C</p>
+            </div>
+            <div class="col-2">
+                <h3 class="date">
+                    05 Jul,<br />
+                    Tue
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">33°C</h4>
+                <p class="tmpr-dgree-night">/21°C</p>
+            </div>
+            <div class="col-2">
+                <h3 class="date">
+                    06 Jul,<br />
+                    Wed
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">31°C</h4>
+                <p class="tmpr-dgree-night">/18°C</p>
+            </div>
+            <div class="col-2">
+                <h3 class="date">
+                    07 Jul,<br />
+                    Thu
+                </h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="weather icon"
+                    class="weather-icon" />
+                <h4 class="tmpr-dgree-day">25°C</h4>
+                <p class="tmpr-dgree-night">/16°C</p>
+            </div>
+        </div>
+    </div>
+    <footer>Coded by Mary Shtainfeld at SheCodes Plus ∘ 2022</footer>
+</body>
+<script src="src/script.js"></script>
+
+</html>

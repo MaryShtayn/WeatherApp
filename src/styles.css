@@ -1,0 +1,137 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form-search {
+    display: block;
+    margin: 0 5px;
+    width: 350px;
+    padding: 2px 2px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffff;
+    appearance: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-box-conteiner {
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);
+    color: #383746;
+    width: 720px;
+    height: 580px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 20px 35px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#city {
+    font-size: 46px;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: #fff;
+}
+
+#today {
+    font-size: 20px;
+    margin-left: 2px;
+    color: #fff;
+}
+
+.current-weather-icon {
+    width: 200px;
+    height: 200px;
+    padding: 5px 5px;
+    align-self: auto;
+}
+
+.current-temp {
+    font-size: 52px;
+    padding: 15px 0px;
+    color: #fff;
+}
+
+.units {
+    font-size: 22px;
+    padding: 15px 15px;
+
+    color: #fff;
+}
+
+.fahrenheit {
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 80%;
+}
+
+ul {
+    list-style: none;
+    font-size: 18px;
+    opacity: 60%;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.curr-day-temp {
+    font-size: 18px;
+    color: #fff;
+    padding: 0px 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.curr-night-temp {
+    font-size: 18px;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+}
+
+.title-weekly-forecast {
+    margin: 30px 0 5px 15px;
+    color: #fff;
+}
+
+.container-weekly-forecast {
+    margin-top: 20px;
+}
+
+.date {
+    font-size: 18px;
+    opacity: 90%;
+    align-self: center;
+    text-align: center;
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.tmpr-dgree-day {
+    font-size: 16px;
+    opacity: 90%;
+    align-self: center;
+    text-align: center;
+}
+
+.tmpr-dgree-night {
+    font-size: 14px;
+    opacity: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
