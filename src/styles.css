@@ -130,8 +130,9 @@ ul {
 }
 
 footer {
-    text-align: center;
+    text-align: start;
     font-size: 12px;
     opacity: 50%;
     margin-bottom: 20px;
+    text-decoration: none;
 }
